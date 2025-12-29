@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Success</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card fadeIn">
+  
+  <div style="font-size:40px; color:#28c76f;">✅</div>
+  <h2 style="color:#1a3e72;">File Uploaded Successfully</h2>
+
+  <p>Your file has been securely stored in <b>Cloud Storage</b></p>
+
+  <p><b>Cloud File Location:</b></p>
+<div style="
+      background:#f3f3f3; padding:10px; border-radius:8px;
+      font-size:14px; color:#444; word-wrap:break-word;">
+  <a href="{{ cloud_url }}" target="_blank" style="color:#007AFF; font-weight:bold;">
+    {{ cloud_url }}
+</a>
+
+</div>
+
+
+
+  <div style="display:flex; justify-content:center; gap:15px; margin-top:20px;">
+    <a class="btn primary" href="/logout">Logout</a>
+    <a class="btn secondary" href="/verify-login">Receiver Login</a>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card fadeIn">
+  <h2>Create Account</h2>
+
+  <form method="POST">
+    <input type="email" name="email" placeholder="Enter Email" required><br><br>
+    <input type="password" name="password" placeholder="Create Password" required><br><br>
+    <button class="btn primary" type="submit">Register</button><br><br>
+
+    <a href="/uploader-login">Already have an account? Login</a>
+  </form>
+
+  {% if msg %}
+  <p class="msg">{{ msg }}</p>
+  {% endif %}
+</div>
+
+</body>
+</html>
